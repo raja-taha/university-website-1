@@ -47,8 +47,8 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li class="admin-option"><a href="#">Add Project</a></li>
-          <li class="admin-option"><a href="#">Add Conference</a></li>
+          <li id="project-option"><a href="#">Add Project</a></li>
+          <li id="conference-option"><a href="#">Add Conference</a></li>
         </ul>
         <p>No. of users visited:</p>
         <p>1</p>
@@ -88,7 +88,7 @@
     <!-- Login Form -->
     <div id="login-form">
       <h1>Login as Admin</h1>
-      <form onsubmit="loginSubmit(event)">
+      <form>
         <div>
           <label for="username">Username: </label>
           <input
@@ -108,7 +108,7 @@
           />
         </div>
 
-        <button type="submit">Login</button>
+        <input type="button" onclick="loginSubmit()" value="Submit" />
       </form>
     </div>
 

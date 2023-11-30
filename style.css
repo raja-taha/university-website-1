@@ -232,7 +232,7 @@ footer {
       }
     }
 
-    > button {
+    > input[type="button"] {
       background-color: #0f62fe;
       color: white;
       padding: 0.5rem;
