@@ -94,7 +94,7 @@ header {
 
 main {
   display: flex;
-  height: 100vh;
+  height: 80vh;
 
   > div:nth-of-type(1) {
     width: 15%;
@@ -140,6 +140,7 @@ main {
     > p {
       font-size: 1.2rem;
       text-align: center;
+      margin-top: 5rem;
 
       &:nth-of-type(2) {
         background-color: #0f62fe;
@@ -156,7 +157,27 @@ main {
   > div:nth-of-type(2) {
     width: 85%;
     background-color: white;
+    display: flex;
+
+    > div {
+      color: black;
+      width: 50%;
+
+      > h1 {
+        text-align: center;
+      }
+    }
   }
+}
+
+.project {
+  box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
 footer {
