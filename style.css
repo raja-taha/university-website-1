@@ -72,7 +72,7 @@ header {
       }
     }
 
-    > button {
+    > a {
       background-color: #0f62fe;
       color: white;
       padding: 0.5rem;
@@ -166,11 +166,29 @@ main {
       > h1 {
         text-align: center;
       }
+
+      > div {
+        overflow-y: scroll;
+        height: 90%;
+        width: 90%;
+        margin: auto;
+        border: 2px solid #0f62fe;
+      }
     }
   }
 }
 
 .project {
+  box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.conferences {
   box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
   -webkit-box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 12px 10px 38px 0px rgba(0, 0, 0, 0.66);
@@ -275,9 +293,10 @@ footer {
   }
 }
 
-.admin-option {
-  visibility: hidden;
-}
+/* #add-projects,
+#add-conferences {
+  display: none;
+} */
 
 /* For Icons */
 .fa {

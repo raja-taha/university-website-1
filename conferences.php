@@ -11,17 +11,16 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM projects";
+$sql = "SELECT * FROM conferences";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo '<div class="project">';
+        echo '<div class="conferences">';
         echo "ID: " . $row["id"] . "<br>";
-        echo "Name:" . $row["name"] . "<br>";
-        echo "Description: " . $row["description"] . "<br>";
+        echo "Title:" . $row["title"] . "<br>";
+        echo "Work Produced: " . $row["work"] . "<br>";
         echo "Date: " . $row["date"] . "<br>";
-        echo "SubmitTo: " . $row["submitTo"] . "<br>";
         echo '</div>';
     }
 } else {
